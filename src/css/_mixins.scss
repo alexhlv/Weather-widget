@@ -1,0 +1,98 @@
+$container-width: 1110px;
+
+%container {
+    max-width: $container-width;
+    margin: 0 auto;
+}
+
+/* flex-items */
+
+@mixin bgimage($size, $horisontal, $vertical) {
+    background: {
+        size: $size, cover;
+        repeat: no-repeat;
+        position: $horisontal $vertical;
+    }
+}
+
+/* container */
+
+@mixin container($horisontal) {
+    max-width: $horisontal;
+    margin: 0 auto;
+}
+
+/* flex-items */
+
+@mixin flex-container($horisontal, $vertical) {
+    display: flex;
+    justify-content: $horisontal;
+    align-items: $vertical;
+}
+
+@mixin flex-container-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: $horisontal;
+    align-items: $vertical;
+}
+
+/* content */
+
+@mixin text-label ($color) {
+    font-size: 14px;
+    line-height: 21px;
+    color: $color;
+}
+
+@mixin text-title ($font-size, $line-height, $color, $p-top, $p-bottom) {
+    font-weight: bold;
+    font-size: $font-size;
+    line-height: $line-height;
+    color: $color;
+    padding-top: $p-top;
+    padding-bottom: $p-bottom;
+}
+
+@mixin text-decription ($color, $p-bottom) {
+    font-size: 16px;
+    line-height: 26px;
+    color: $color;
+    padding-bottom: $p-bottom;
+}
+
+@mixin text-link ($color) {
+    font-size: 16px;
+    line-height: 18px;
+    text-decoration-line: underline;
+    color: $color;
+}
+
+@mixin company-decription ($font-size, $line-height, $p-top, $p-right, $p-bottom, $p-left) {
+    font-style: italic;
+    font-size: $font-size;
+    line-height: $line-height;
+    color: #4D533C;
+    padding-top: $p-top;
+    padding-right: $p-right;
+    padding-bottom: $p-bottom;
+    padding-left: $p-left;
+}
+
+@mixin founder-position ($font-size, $line-height, $color, $p-bottom) {
+    font-size: $font-size;
+    line-height: $line-height;
+    color: $color;
+    padding-bottom: $p-bottom;
+}
+
+/* box-shadow */
+
+@mixin shadow-block ($horizontal, $vertical) {
+    box-shadow: $horizontal $vertical 100px rgba(0, 0, 0, 0.145947);
+}
+
+@mixin shadow-logo  {
+    box-shadow: 20px 25px 43px rgba(0, 0, 0, 0.18);
+    border-radius: 50%;
+}
