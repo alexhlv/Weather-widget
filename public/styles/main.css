@@ -1,0 +1,292 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: 'ABeeZee';
+  src: url("../../public/fonts/abeezee/ABeeZee-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic; }
+@font-face {
+  font-family: 'ABeeZee';
+  src: url("../../public/fonts/abeezee/ABeeZee-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+body {
+  font-family: 'Poppins', sans-serif; }
+
+/* container */
+/* flex-items */
+/* position */
+/* content */
+/* box-shadow */
+.widget {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 800px;
+  height: 600px;
+  margin: 0 auto;
+  padding-top: 70px;
+  padding-right: 75px;
+  padding-bottom: 70px;
+  padding-left: 75px;
+  background-image: url("../../public/images/bg-image-weather.jpg");
+  background-repeat: space;
+  background-position: center; }
+  .widget__card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+    background-image: url("../../public/images/bg-image-weather-card.jpg");
+    background-repeat: space;
+    background-position: center;
+    /* container */
+    /* flex-items */
+    /* position */
+    /* content */
+    /* box-shadow */ }
+    .widget__card .left-card {
+      width: 251px;
+      height: 460px; }
+      .widget__card .left-card__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 108px;
+        padding-right: 0;
+        padding-bottom: 0;
+        padding-left: 0; }
+      .widget__card .left-card__logo {
+        width: 127px;
+        height: 105px; }
+      .widget__card .left-card__title {
+        width: 152px;
+        height: 28px;
+        font-family: ABeeZee;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 28px;
+        color: #9E9E9E;
+        padding-top: 13px;
+        padding-right: 0;
+        padding-bottom: 40px;
+        padding-left: 0; }
+      .widget__card .left-card__schedule {
+        padding-top: 20px;
+        padding-right: 28px;
+        padding-bottom: 20px;
+        padding-left: 33px; }
+      .widget__card .left-card__day-of-week {
+        font-family: ABeeZee;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        color: #5C5C5C;
+        padding-top: 0;
+        padding-right: 30px;
+        padding-bottom: 0;
+        padding-left: 0;
+        position: relative; }
+        .widget__card .left-card__day-of-week::before {
+          content: "";
+          display: block;
+          width: 244px;
+          height: 2px;
+          color: #D6E6F1;
+          border: 1px solid #D6E6F1;
+          position: absolute;
+          left: -33px;
+          top: 29px; }
+        .widget__card .left-card__day-of-week::after {
+          content: "";
+          display: block;
+          width: 48px;
+          height: 1px;
+          color: #B5DDFA;
+          border: 2px solid #B5DDFA;
+          position: absolute;
+          left: -7px;
+          top: 26px; }
+      .widget__card .left-card__week {
+        font-family: ABeeZee;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        color: #9C9C9C; }
+      .widget__card .left-card__graphics {
+        padding-top: 27px;
+        padding-right: 0;
+        padding-bottom: 0;
+        padding-left: 0; }
+      .widget__card .left-card__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: relative;
+        margin-top: 10px;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 0; }
+        .widget__card .left-card__item::before {
+          content: "";
+          display: block;
+          width: 205px;
+          height: 1px;
+          color: #D6E6F1;
+          border: 1px solid #E8E8E8;
+          position: absolute;
+          left: -14px;
+          top: 30px; }
+      .widget__card .left-card__date {
+        font-family: ABeeZee;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        color: #4F4F4F;
+        padding-top: 10px;
+        padding-right: 0;
+        padding-bottom: 0;
+        padding-left: 0; }
+      .widget__card .left-card__weather {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start; }
+      .widget__card .left-card__image {
+        width: 25px;
+        height: 21px;
+        padding-top: 0;
+        padding-right: 6px;
+        padding-bottom: 0;
+        padding-left: 0; }
+      .widget__card .left-card__temperature {
+        font-family: ABeeZee;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        color: #4F4F4F;
+        padding-top: 10px;
+        padding-right: 0;
+        padding-bottom: 0;
+        padding-left: 0; }
+    .widget__card .right-card {
+      position: relative; }
+      .widget__card .right-card__title {
+        position: absolute;
+        top: 104px;
+        right: 18px;
+        font-family: ABeeZee;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 43px;
+        color: #507998;
+        width: 230px;
+        height: 43px; }
+      .widget__card .right-card__text {
+        position: absolute;
+        top: 140px;
+        right: 20px;
+        font-family: ABeeZee;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 24px;
+        color: #98C6E8;
+        width: 82px;
+        height: 24x; }
+      .widget__card .right-card__temperature {
+        position: absolute;
+        top: 410px;
+        right: 20px;
+        font-family: ABeeZee;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 100px;
+        line-height: 118px;
+        color: #ffffff;
+        width: 151px;
+        height: 118px; }
+      .widget__card .right-card__time {
+        position: absolute;
+        top: 460px;
+        right: 298px;
+        font-family: ABeeZee;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        color: #ffffff;
+        width: 92px;
+        height: 24px; }
+      .widget__card .right-card__date {
+        position: absolute;
+        top: 480px;
+        right: 180px;
+        font-family: ABeeZee;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        color: #d1dae7;
+        width: 210px;
+        height: 21px; }
+
+/*# sourceMappingURL=main.css.map */

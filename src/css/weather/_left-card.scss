@@ -1,0 +1,77 @@
+.left-card {
+    @include size (251px, 460px);
+
+    &__info {
+        @include flex-container-column (flex-start, center);
+        @include padding(108px, 0, 0, 0);
+    }
+
+    &__logo {
+        @include size (127px, 105px);
+    }
+    
+    &__title {
+        @include size (152px, 28px);
+        @include content-decription (italic, 24px, 28px, #9E9E9E);
+        @include padding(13px, 0, 40px, 0);
+    }
+    
+    &__schedule {
+        @include padding(20px, 28px, 20px, 33px);
+    }
+
+    // &__weekday {
+
+    // }
+
+    &__day-of-week {
+        @include content-decription(italic, 12px, 14px, #5C5C5C);
+        @include padding(0, 30px, 0, 0);
+        position: relative;
+
+        &::before {
+            @include line(244px, 2px, #D6E6F1, 1px, solid, #D6E6F1, -33px, 29px);
+        }
+
+        &::after {
+            @include line(48px, 1px, #B5DDFA, 2px, solid, #B5DDFA, -7px, 26px);
+        }
+    }
+    
+    &__week {
+        @include content-decription(normal, 12px, 14px, #9C9C9C);
+    }
+
+    &__graphics {
+        @include padding(27px, 0, 0, 0);
+    }
+
+    &__item {
+        @include flex-container(space-between, flex-start);
+        position: relative;
+        @include margin(10px, 0, 0, 0);
+
+        &::before {
+            @include line(205px, 1px, #D6E6F1, 1px, solid, #E8E8E8, -14px, 30px);
+        }
+    }
+    
+    &__date {
+        @include content-decription(italic, 12px, 14px, #4F4F4F);
+        @include padding(10px, 0, 0, 0);
+    }
+    
+    &__weather {
+        @include flex-container(space-between, flex-start);
+    }
+    
+    &__image {
+        @include size(25px, 21px);
+        @include padding(0, 6px, 0, 0);
+    }
+    
+    &__temperature {
+        @include content-decription(italic, 12px, 14px, #4F4F4F);
+        @include padding(10px, 0, 0, 0);
+    }
+}

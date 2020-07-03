@@ -1,25 +1,34 @@
-$container-width: 1110px;
-
-%container {
-    max-width: $container-width;
-    margin: 0 auto;
-}
-
-/* flex-items */
-
-@mixin bgimage($size, $horisontal, $vertical) {
-    background: {
-        size: $size, cover;
-        repeat: no-repeat;
-        position: $horisontal $vertical;
-    }
-}
-
 /* container */
 
-@mixin container($horisontal) {
-    max-width: $horisontal;
+@mixin container($horisontal, $vertical) {
+    width: $horisontal;
+    height: $vertical;
     margin: 0 auto;
+}
+
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin background-image($url) {
+    background-image: url($url);
+    background-repeat: space;
+    background-position: center;
+}
+
+@mixin margin($top, $right, $bottom, $left) {
+    margin-top: $top;
+    margin-right: $right;
+    margin-bottom: $bottom;
+    margin-left: $left; 
+}          
+
+@mixin padding($top, $right, $bottom, $left) {
+    padding-top: $top;
+    padding-right: $right;
+    padding-bottom: $bottom;
+    padding-left: $left; 
 }
 
 /* flex-items */
@@ -30,69 +39,69 @@ $container-width: 1110px;
     align-items: $vertical;
 }
 
-@mixin flex-container-column {
+@mixin flex-container-column($horisontal, $vertical) {
     display: flex;
     flex-direction: column;
     justify-content: $horisontal;
     align-items: $vertical;
 }
 
+/* position */
+
+@mixin position-top-right($top, $right) {
+    position: absolute;
+    top: $top;
+    right: $right;
+}
+
+// @mixin position-right-bottom($right, $bottom) {
+//     position: absolute;
+//     right: $right;
+//     bottom: $bottom;
+// }
+
+// @mixin position-bottom-left($bottom, $left) {
+//     position: absolute;
+//     bottom: $bottom;
+//     left: $left;
+// }
+
+// @mixin position-left-top($left, $top) {
+//     position: absolute;
+//     left: $left;
+//     top: $top;
+// }
+
 /* content */
 
-@mixin text-label ($color) {
-    font-size: 14px;
-    line-height: 21px;
+@mixin content-decription($style, $size, $height, $color) {
+    font-family: ABeeZee;
+    font-style: $style;
+    font-weight: normal;
+    font-size: $size;
+    line-height: $height;
     color: $color;
 }
 
-@mixin text-title ($font-size, $line-height, $color, $p-top, $p-bottom) {
-    font-weight: bold;
-    font-size: $font-size;
-    line-height: $line-height;
+@mixin line($width, $height, $color, $b-width, $b-style, $b-color, $left, $top) {
+    content: "";
+    display: block;
+    width: $width;
+    height: $height;
     color: $color;
-    padding-top: $p-top;
-    padding-bottom: $p-bottom;
-}
-
-@mixin text-decription ($color, $p-bottom) {
-    font-size: 16px;
-    line-height: 26px;
-    color: $color;
-    padding-bottom: $p-bottom;
-}
-
-@mixin text-link ($color) {
-    font-size: 16px;
-    line-height: 18px;
-    text-decoration-line: underline;
-    color: $color;
-}
-
-@mixin company-decription ($font-size, $line-height, $p-top, $p-right, $p-bottom, $p-left) {
-    font-style: italic;
-    font-size: $font-size;
-    line-height: $line-height;
-    color: #4D533C;
-    padding-top: $p-top;
-    padding-right: $p-right;
-    padding-bottom: $p-bottom;
-    padding-left: $p-left;
-}
-
-@mixin founder-position ($font-size, $line-height, $color, $p-bottom) {
-    font-size: $font-size;
-    line-height: $line-height;
-    color: $color;
-    padding-bottom: $p-bottom;
+    border: $b-width $b-style $b-color;
+    position: absolute;
+    left: $left;
+    top: $top;
 }
 
 /* box-shadow */
 
-@mixin shadow-block ($horizontal, $vertical) {
-    box-shadow: $horizontal $vertical 100px rgba(0, 0, 0, 0.145947);
-}
+// @mixin shadow-block($horizontal, $vertical) {
+//     box-shadow: $horizontal $vertical 100px rgba(0, 0, 0, 0.145947);
+// }
 
-@mixin shadow-logo  {
-    box-shadow: 20px 25px 43px rgba(0, 0, 0, 0.18);
-    border-radius: 50%;
-}
+// @mixin shadow-logo {
+//     box-shadow: 20px 25px 43px rgba(0, 0, 0, 0.18);
+//     border-radius: 50%;
+// }

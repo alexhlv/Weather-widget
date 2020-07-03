@@ -1,0 +1,17 @@
+@import '../mixins';
+
+.widget {
+    @include flex-container(space-between, center);
+    @include container(800px, 600px);
+    @include padding(70px, 75px, 70px, 75px);
+    @include background-image('../../public/images/bg-image-weather.jpg');
+
+    &__card {
+        @include flex-container(space-between, flex-start);
+        @include container(800px, 600px);
+        @include background-image('../../public/images/bg-image-weather-card.jpg');
+
+        @import '../weather/left-card';
+        @import '../weather/right-card';
+    }
+}

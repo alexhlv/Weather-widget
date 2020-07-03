@@ -1,0 +1,35 @@
+@import '../mixins';
+
+.right-card {
+    position: relative;
+
+    &__title {
+        @include position-top-right(104px, 18px);
+        @include content-decription(italic, 36px, 43px, #507998);
+        @include size(230px, 43px);
+    }
+    
+    &__text {
+        @include position-top-right(140px, 20px);
+        @include content-decription(italic, 12px, 24px, #98C6E8);
+        @include size(82px, 24x);
+    }
+    
+    &__temperature {
+        @include position-top-right(410px, 20px);
+        @include content-decription(italic, 100px,118px, #ffffff);
+        @include size(151px, 118px);
+    }
+    
+    &__time {
+        @include position-top-right(460px, 298px);
+        @include content-decription(italic, 20px, 24px, #ffffff);
+        @include size(92px, 24px);
+    }
+    
+    &__date {
+        @include position-top-right(480px, 180px);
+        @include content-decription(normal, 18px, 21px, #d1dae7);
+        @include size(210px, 21px);
+    }
+}

@@ -3,9 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather-widget</title>
+    <link rel="stylesheet" href="./public/styles/main.css">
 </head>
 <body>
-    
+    <section class="widget">
+        <div class="widget__card">
+            <div class="left-card">
+                <div class="left-card__info">
+                    <img class="left-card__logo" src="public/images/CloudySkiesIcon1.png" alt="CloudySkiesIcon">
+                    <h2 class="left-card__title">Partly Cloudy</h2>
+                </div>
+                <div class="left-card__schedule">
+                    <div class="left-card__weekday">
+                        <span class="left-card__day-of-week">Today</span>
+                        <span class="left-card__week">Week</span>
+                    </div>
+                    <ul class="left-card__graphics">
+                        <li class="left-card__item">
+                            <div class="left-card__date">Now</div>
+                            <div class="left-card__weather">
+                                <img class="left-card__image" src="public/images/CloudySkiesIcon2.png" alt="CloudySkiesIcon">
+                                <p class="left-card__temperature">65°</p>
+                            </div>
+                        </li>
+                        <li class="left-card__item">
+                            <div class="left-card__date">9:00 a.m.</div>
+                            <div class="left-card__weather">
+                                <img class="left-card__image" src="public/images/CloudySkiesIcon3.png" alt="CloudySkiesIcon">
+                                <p class="left-card__temperature">71°</p>
+                            </div>
+                        </li>
+                        <li class="left-card__item">
+                            <div class="left-card__date">10:00 a.m.</div>
+                            <div class="left-card__weather">
+                                <img class="left-card__image" src="public/images/SunIcon1.png" alt="CloudySkiesIcon">
+                                <p class="left-card__temperature">73°</p>
+                            </div>
+                        </li>
+                        <li class="left-card__item">
+                            <div class="left-card__date">11:00 a.m.</div>
+                            <div class="left-card__weather">
+                                <img class="left-card__image" src="public/images/SunIcon2.png" alt="CloudySkiesIcon">
+                                <p class="left-card__temperature">75°</p>
+                            </div>
+                        </li>
+                        <li class="left-card__item">
+                            <div class="left-card__date">12:00 p.m.</div>
+                            <div class="left-card__weather">
+                                <img class="left-card__image" src="public/images/SunIcon3.png" alt="CloudySkiesIcon">
+                                <p class="left-card__temperature">84°</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-card">
+                <h1 class="right-card__title">San Fransisco</h1>
+                <p class="right-card__text">CALIFORNIA</p>
+                <p class="right-card__temperature">65°</p>
+                <p class="right-card__time">8:43 a.m.</p>
+                <p class="right-card__date">Monday, November 16th</p>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
