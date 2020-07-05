@@ -67,7 +67,6 @@ body {
 /* flex-items */
 /* position */
 /* content */
-/* box-shadow */
 .widget {
   display: flex;
   justify-content: space-between;
@@ -95,8 +94,7 @@ body {
     /* container */
     /* flex-items */
     /* position */
-    /* content */
-    /* box-shadow */ }
+    /* content */ }
     .widget__card .left-card {
       width: 251px;
       height: 460px; }
@@ -227,66 +225,78 @@ body {
         padding-bottom: 0;
         padding-left: 0; }
     .widget__card .right-card {
-      position: relative; }
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end; }
+      .widget__card .right-card__box_top {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding-top: 104px;
+        padding-right: 18px;
+        padding-bottom: 0;
+        padding-left: 0; }
+      .widget__card .right-card__box_bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding-top: 195px;
+        padding-right: 0;
+        padding-bottom: 0;
+        padding-left: 0; }
       .widget__card .right-card__title {
-        position: absolute;
-        top: 104px;
-        right: 18px;
         font-family: ABeeZee;
         font-style: italic;
         font-weight: normal;
         font-size: 36px;
         line-height: 43px;
         color: #507998;
-        width: 230px;
-        height: 43px; }
+        text-align: right; }
       .widget__card .right-card__text {
-        position: absolute;
-        top: 140px;
-        right: 20px;
         font-family: ABeeZee;
         font-style: italic;
         font-weight: normal;
         font-size: 12px;
         line-height: 24px;
         color: #98C6E8;
-        width: 82px;
-        height: 24x; }
-      .widget__card .right-card__temperature {
-        position: absolute;
-        top: 410px;
-        right: 20px;
-        font-family: ABeeZee;
-        font-style: italic;
-        font-weight: normal;
-        font-size: 100px;
-        line-height: 118px;
-        color: #ffffff;
-        width: 151px;
-        height: 118px; }
+        text-align: right; }
+      .widget__card .right-card__items {
+        padding-top: 95px;
+        padding-right: 175px;
+        padding-bottom: 0;
+        padding-left: 0; }
+        .widget__card .right-card__items_right {
+          padding-top: 0;
+          padding-right: 0;
+          padding-bottom: 0;
+          padding-left: 0;
+          margin-top: -105px;
+          margin-right: 0;
+          margin-bottom: 0;
+          margin-left: 0; }
       .widget__card .right-card__time {
-        position: absolute;
-        top: 460px;
-        right: 298px;
         font-family: ABeeZee;
         font-style: italic;
         font-weight: normal;
         font-size: 20px;
         line-height: 24px;
-        color: #ffffff;
-        width: 92px;
-        height: 24px; }
+        color: #ffffff; }
       .widget__card .right-card__date {
-        position: absolute;
-        top: 480px;
-        right: 180px;
         font-family: ABeeZee;
         font-style: normal;
         font-weight: normal;
         font-size: 18px;
         line-height: 21px;
-        color: #d1dae7;
-        width: 210px;
-        height: 21px; }
+        color: #d1dae7; }
+      .widget__card .right-card__temperature {
+        font-family: ABeeZee;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 100px;
+        line-height: 118px;
+        color: #ffffff; }
 
 /*# sourceMappingURL=main.css.map */

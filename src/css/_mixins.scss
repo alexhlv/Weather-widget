@@ -54,24 +54,6 @@
     right: $right;
 }
 
-// @mixin position-right-bottom($right, $bottom) {
-//     position: absolute;
-//     right: $right;
-//     bottom: $bottom;
-// }
-
-// @mixin position-bottom-left($bottom, $left) {
-//     position: absolute;
-//     bottom: $bottom;
-//     left: $left;
-// }
-
-// @mixin position-left-top($left, $top) {
-//     position: absolute;
-//     left: $left;
-//     top: $top;
-// }
-
 /* content */
 
 @mixin content-decription($style, $size, $height, $color) {
@@ -81,6 +63,10 @@
     font-size: $size;
     line-height: $height;
     color: $color;
+}
+
+@mixin text-align($align) {
+    text-align: $align;
 }
 
 @mixin line($width, $height, $color, $b-width, $b-style, $b-color, $left, $top) {
@@ -94,14 +80,3 @@
     left: $left;
     top: $top;
 }
-
-/* box-shadow */
-
-// @mixin shadow-block($horizontal, $vertical) {
-//     box-shadow: $horizontal $vertical 100px rgba(0, 0, 0, 0.145947);
-// }
-
-// @mixin shadow-logo {
-//     box-shadow: 20px 25px 43px rgba(0, 0, 0, 0.18);
-//     border-radius: 50%;
-// }
